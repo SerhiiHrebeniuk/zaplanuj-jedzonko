@@ -1,0 +1,140 @@
+@import "../../../scss/_generic.scss";
+
+.infonews__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $menus-background;
+
+    .infonews__main {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 3.5rem 0;
+
+        .infonews__box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        
+
+            &.text {
+                margin-right: 100px;
+
+                h1 {
+                    font-size: 2rem;
+                    color: #fff;
+                    font-family: $primary-font;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            &.text p {
+                font-size: 1rem;
+                font-family: $primary-font;
+                line-height: 1.5;
+                text-align: justify;
+                color: #fff;
+            }
+
+            &.list h1 {
+                font-size: 2rem;
+                color: #fff;
+                font-family: $primary-font;
+                margin-bottom: 10px;
+            }
+
+            &.list ul {
+                font-size: 1rem;
+                font-family: $primary-font;
+                line-height: 1.5;
+                text-align: justify;
+                color: #fff;
+
+                li {
+                    list-style-type: disc;
+                    margin-left: 25px;
+                    line-height: 2;
+                }
+            }
+
+            &.contact h1 {
+                font-size: 2rem;
+                color: #fff;
+                font-family: $primary-font;
+                margin-bottom: 20px;
+            }
+
+            &.contact .input {
+
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin-bottom: 20px;
+
+                input {
+                    width: 50%;
+                    height: 100%;
+                    margin-right: 10px;
+                    outline: none;
+                    border-radius: 5px;
+    
+                    &:focus {
+                        font-size: 12px;
+                        padding-bottom: 20px;
+                        border: 1px solid $distinct-color;
+                    }
+                }
+            }
+            
+
+            &.contact .input input::placeholder {
+                color:$distinct-color
+            }
+
+            &.contact button {
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                background-color: $distinct-color;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+                line-height: 1.75;
+                text-transform: uppercase;
+                font-family: $primary-font;
+            }
+            &.contact button:hover {
+                background-color: #c95102;
+                box-shadow: 0px 10px 20px 7px #1d1d1d;
+            }
+        
+            &.contact button:active {
+                transform: translateY(-1px);
+                box-shadow: 0px 5px 10px 4px #1d1d1d;
+            }
+
+            &.contact .socilamedia {
+                width: 50%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .MuiSvgIcon-root {
+                fill: #fff;
+                font-size: 3rem;
+            }
+
+            .MuiSvgIcon-root:hover {
+                fill: $distinct-color;
+            }
+        }
+    }
+}

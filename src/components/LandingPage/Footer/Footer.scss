@@ -1,0 +1,23 @@
+@import "../../../scss/_generic.scss";
+
+.footer__container {
+    width: 100%;
+    height: auto;
+    background: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+
+        & h1 {
+            font-size: 18px;
+            font-weight: normal;
+            font-family: $primary-font;
+            color: #fff;
+
+            & span {
+                color: $distinct-color;
+            }
+        }
+}

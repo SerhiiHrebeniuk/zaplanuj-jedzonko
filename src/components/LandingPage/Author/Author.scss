@@ -1,0 +1,40 @@
+@import "../../../scss/_generic.scss";
+
+.author__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px 50px 150px;
+    background: $widgets-background;
+
+
+    & img {
+        width: 35%;
+        height: 30%;
+    }
+
+    .text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+
+        & h1 {
+            font-size: 2.8rem;
+            padding-bottom: 50px;
+            font-family: $primary-font;
+            color: $menus-background;
+        }
+
+        & p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 3%;
+            font-family: $primary-font;
+            color: $menus-background;
+        }   
+    }
+}

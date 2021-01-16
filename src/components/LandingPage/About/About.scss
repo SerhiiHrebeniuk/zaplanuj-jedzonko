@@ -1,0 +1,49 @@
+@import "../../../scss/generic";
+
+.about__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: $widgets-background;
+
+    .info {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        margin: 100px 0;
+
+        &--box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 20px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 40px;
+                font-family: $primary-font;
+                color: $menus-background;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $menus-background;
+                line-height: 1.7;
+                text-align: justify;
+                font-weight: 400;
+            }
+        }
+    }
+}
